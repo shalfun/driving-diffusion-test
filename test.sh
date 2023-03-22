@@ -1,0 +1,1 @@
+python run.py -p test -c config/test.json
