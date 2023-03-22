@@ -25,7 +25,7 @@ bash test.sh
 
 ### visualization
 From top to bottom is condition, inference result, ground truth.
-The condition simply encodes lane lines, curbs, stop lines, and sidewalks by pixel value.
+The condition simply encodes lane lines(include linetype), curbs, stop lines, and sidewalks by pixel value.
 
 
 ![1](img/im_1.png)  ![1](img/im_2.png)  ![1](img/im_3.png) ![1](img/im_4.png)  ![1](img/im_6.png)  ![1](img/im_7.png)  ![1](img/im_8.png)  ![1](img/im_10.png) 
