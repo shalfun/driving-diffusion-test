@@ -4,7 +4,7 @@ The code has not been tidied up！！
 
 A few weeks after the initial implementation became available, I saw the open source repo 'controlnet'. Now I decided to record my trash.
 
-codebase: Palette: [Project](https://iterative-refinement.github.io/palette/ )
+codebase : [Project](https://iterative-refinement.github.io/palette/ ) (thx
 
 ### What is the code doing and what is being achieved?
 
@@ -13,9 +13,9 @@ codebase: Palette: [Project](https://iterative-refinement.github.io/palette/ )
 Generate road structure autonomous driving scenarios by using customized data formats.
 
 ##### OPTION
-+ prompt points ---> image
-+ prompt points ---> surrounding image (for bev perception)
-+ super resolution: image --> image_L
++ condition(points) ---> image
++ condition(points) ---> surrounding image (for bev perception)
++ super resolution: image --> image_large
 
 ### Train
 bash run.sh
@@ -24,3 +24,8 @@ bash run.sh
 bash test.sh
 
 ### visualization
+From top to bottom is condition, inference result, ground truth.
+The condition simply encodes lane lines, curbs, stop lines, and sidewalks by pixel value.
+
+
+![1](img/im_1.png)  ![1](img/im_2.png)  ![1](img/im_3.png) ![1](img/im_4.png)  ![1](img/im_6.png)  ![1](img/im_7.png)  ![1](img/im_8.png)  ![1](img/im_10.png) 
