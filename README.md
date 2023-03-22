@@ -1,6 +1,7 @@
 # driving-diffusion-test
 
-The code has not been tidied up！！ 
+The code has not been tidied up！！ (For personal only)
+
 
 A few weeks after the initial implementation became available, I saw the open source repo 'controlnet'. Now I decided to record my trash.
 
@@ -13,9 +14,9 @@ codebase : [Project](https://iterative-refinement.github.io/palette/ ) (thx
 Generate road structure autonomous driving scenarios by using customized data formats.
 
 ##### OPTION
-+ condition(points) ---> image
-+ condition(points) ---> surrounding image (for bev perception)
-+ super resolution: image --> image_large
++ GenerateDataset: condition(points) ---> image 
++ GenerateDatasetMultiView: condition(points) ---> surrounding image (for bev perception)
++ SuperResolutionDataset: super resolution: image --> image_large
 
 ### Train
 bash run.sh
